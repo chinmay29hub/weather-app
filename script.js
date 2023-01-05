@@ -7,7 +7,7 @@ import WEATHER_API from "./apikey.js"
  */
 
 // API_KEY for maps api
-let API_KEY = WEATHER_API;
+let API_KEY = WEATHER_API
 
 /**
  * Retrieve weather data from openweathermap
@@ -32,7 +32,7 @@ const getWeatherData = (city) => {
  * Retrieve city input and get the weather data
  * HINT: Use the promise returned from getWeatherData()
  */
-const searchCity = () => {
+document.getElementById("sr").onclick = () => {
   const city = document.getElementById('city-input').value;
   // CODE GOES HERE
   getWeatherData(city).then((res)=>{
@@ -48,6 +48,8 @@ const searchCity = () => {
     clear()
 }
 }
+
+
 
 /**
  * Show the weather data in HTML
