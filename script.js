@@ -32,7 +32,7 @@ const getWeatherData = (city) => {
  * Retrieve city input and get the weather data
  * HINT: Use the promise returned from getWeatherData()
  */
-searchCity = () => {
+const searchCity = () => {
   const city = document.getElementById('city-input').value;
   // CODE GOES HERE
   getWeatherData(city).then((res)=>{
@@ -53,7 +53,7 @@ searchCity = () => {
  * Show the weather data in HTML
  * HINT: make sure to console log the weatherData to see how the data looks like
  */
-showWeatherData = (weatherData) => {
+const showWeatherData = (weatherData) => {
   //CODE GOES HERE
   const city = document.getElementById("city-name")
   const weather = document.getElementById("weather-type")
